@@ -2,7 +2,9 @@
 
 ## Identified Problem or Need
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
+When doing pottery you can glaze the thing you made (piece). Putting more of a glaze on can give different affects. This can also be changed
+by combining glazes, for example, putting 2 layers of red on and 2 layers of black on. This can be difficult to track as you must leave a glaze for a while before
+adding another layer. This means you can forget how many layers have been completed leading to affects that you didn't want. 
 
 
 ## End-User Requirements
