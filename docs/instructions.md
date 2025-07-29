@@ -89,9 +89,9 @@ Achievement standard [91892](as91892.pdf), Use advanced techniques to develop a 
 Use advanced techniques to develop a database means that, taking into account the problem / need and the end users:
 
 1. You must first define the purpose of your system and the end-users' needs:
-   - [ ] Define the **purpose of the system** that uses the database
-   - [ ] Describe the **needs of the end-users**
-   - [ ] Define the **key functionality** of the proposed system
+   - [x] Define the **purpose of the system** that uses the database
+   - [x] Describe the **needs of the end-users**
+   - [x] Define the **key functionality** of the proposed system
 
 
 2. You need to design the structure of the database:

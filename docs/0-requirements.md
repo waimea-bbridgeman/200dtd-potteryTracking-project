@@ -9,84 +9,83 @@ adding another layer. This means you can forget how many layers have been comple
 
 ## End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
-
+Able to track pottery piece progress (how many glazes done, how many till complete). Add more pieces to the DB as well as glazes owned. 
 
 ## Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+Make a website that uses a DB that holds information about what glazes owned and what pieces made that tracks how close a piece is to being complete and 
+displays a photo of the finished product (maybe) to showcase what the finished product looks like compared to what the recipe says it should. 
 
 
 ---
 
 # Relevant Implications
 
-## NAME OF IMPLICATION 1
+## Usability Implications
 
-Replace this text with a clear explanation of what the implication means.
-
-### Relevance to the System
-
-Replace this text with an explanation of why the implication is relevant to this particular project.
-
-### Impact / Considerations
-
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
-
-
-## NAME OF IMPLICATION 2
-
-Replace this text with a clear explanation of what the implication means.
+Usability implications refer to how easily your end user can navigate your website. 
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Usability implications will help to make sure my end user doesn’t get lost or have trouble understanding how my website works.  
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+To achieve using this implication effectively i will need to get feedback from my end-user about how and where they want the navigation bars to work and where they are placed on the page. 
 
 
 
-## NAME OF IMPLICATION 3
+## Functionality Implications
 
-Replace this text with a clear explanation of what the implication means.
+Functionality implications refer to how particular features effect the overall usefulness and effectiveness on the system.  
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Functionality implications will help my end user use my website to fulfil its intended purpose without getting confused or having overcomplicated steps to achieve something.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+To use Functionality implications across my website i need to consider how my end user will want to navigate the website and interact with my DB 
 
 
 
-## NAME OF IMPLICATION 4
+## Aesthetic Implications 
 
-Replace this text with a clear explanation of what the implication means.
+Aesthetic implications refer to how the design of the website looks. The use of colours that work well together, font/font size, 
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Aesthetic implication is relevant to the system because the aesthetics affects how the users experience is shaped. Having clear colours on buttons, like white on black instead of light blue on dark blue makes them easy to see. 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+To make sure that my end user can clearly make their way around my website, ill need to use contrasting colours that work well together. 
 
 
 
-## NAME OF IMPLICATION 5
+## End-User Implications
 
-Replace this text with a clear explanation of what the implication means.
+The website is connected to solving the issues of your end user. 
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+End-User Implications is relevant to the system because the website is based around the user and what they want in the first place. This makes it logical to listen to them and how they want the website to be layed out. 
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+Considering that the website is for the sole purpose of fulfilling what the end user wants, getting feedback along the way will help me to satisfy the end users desires for the website. 
 
+
+
+## Accessibility Implications
+
+Accessibility Implications means that my website is available across platforms and to all end users. 
+
+### Relevance to the System
+
+Accessibility Implications is relevant to the system because it allows the website to be accessible to more people. 
+
+### Impact / Considerations
+
+Since my website will only be used by one person. I will need to consider all the systems that it might be used on (phone, ipad and computer) 
 
