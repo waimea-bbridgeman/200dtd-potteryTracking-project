@@ -12,9 +12,9 @@ Develop a prototype that simulates the key functionality of the system, then tes
 
 ## Initial Database Design
 
-Replace this text with notes regarding the DB design.
+My database has a many to many relationship using the 'uses' table as a middle man 
 
-![SCREENSHOT OF DB DESIGN](screenshots/example.png)
+![SCREENSHOT OF DB DESIGN](screenshots/V1-drawsql.png)
 
 
 ---
@@ -25,17 +25,33 @@ The first stage of prototyping was to explore how the UI might 'flow' between st
 
 This Figma demo shows the initial design for the UI 'flow':
 
-**FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/jrjTF0v4YJQb6mhxI8gtz6/Untitled?node-id=42-2769&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A2769&embed-host=share" allowfullscreen></iframe>
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+Giving my prototype to my end-user this was some feedback that was raised: 
+> There is no way to cancel adding a piece or glaze so maybe add a cancel button or home button somewhere
+
+> Photo of the piece before and after being glazed
+
+> Date of when piece was started/completed 
+
 
 ### Changes / Improvements
 
 Replace this text with notes any improvements you made as a result of the testing.
 
-*IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/ZRpIf2Z5lhSrrTPOOyWl4G/V2?node-id=1-451&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+
+
+---
+
+## Initial Database Design
+
+After the talks with my end-user, their comment about having the date of when the piece was added to the database required me to change
+my drawSQL prototype. 
+
+![SCREENSHOT OF DB DESIGN](screenshots/V2-drawsql.png)
 
 
 ---
@@ -50,7 +66,10 @@ This Figma demo shows the initial layout design for the UI:
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+Giving my prototype to my end-user this was some feedback that was raised: 
+> Increase the amount of glazes that can be added to 7 or so 
+
+> Add the total amount of layers to be done 
 
 ### Changes / Improvements
 
