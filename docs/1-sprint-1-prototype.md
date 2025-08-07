@@ -39,14 +39,15 @@ Giving my prototype to my end-user this was some feedback that was raised:
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+After my end-user gave me feedback on places i could work on, i added a cancel button as well as a home button, a space fro pictures to be displayed next to the 
+pieces in the list and added a field for my end-user to add the date. 
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/ZRpIf2Z5lhSrrTPOOyWl4G/V2?node-id=1-451&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
 
 
 ---
 
-## Initial Database Design
+## Improved Database Design
 
 After the talks with my end-user, their comment about having the date of when the piece was added to the database required me to change
 my drawSQL prototype. 
@@ -56,29 +57,21 @@ my drawSQL prototype.
 
 ---
 
-## Initial UI Prototype
-
-The next stage of prototyping was to develop the layout for each screen of the UI.
-
-This Figma demo shows the initial layout design for the UI:
-
-*FIGMA PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
 ### Testing
 
-Giving my prototype to my end-user this was some feedback that was raised: 
+Giving my V2 prototype to my end-user this was some feedback that was raised: 
 > Increase the amount of glazes that can be added to 7 or so 
 
 > Add the total amount of layers to be done 
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+I made the glazes box into a dropdown that should create another one below it when filled in so that more glazes can be added. I also made another box in the "add piece" form that allows my end-user to add the total amount of planned glazes for the piece. 
 
-*FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/h1WEgzJ1t517FIH7K2vcqM/V3?node-id=1-451&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
 
 
----
+---     
 
 ## Refined UI Prototype
 
