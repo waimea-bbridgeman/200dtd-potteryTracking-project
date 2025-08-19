@@ -1,8 +1,12 @@
 #===========================================================
-# YOUR PROJECT TITLE HERE
-# YOUR NAME HERE
+# Pottery Tracking project
+# Billy Bridgeman 
 #-----------------------------------------------------------
-# BRIEF DESCRIPTION OF YOUR PROJECT HERE
+# Tracks the amount of glazes done on a certain piece
+#it does this by allowing the end user to add pottery pieces
+#to the DB and giving them the ability to update the amount of 
+#layers each piece has had. 
+
 #===========================================================
 
 from flask import Flask, render_template, request, flash, redirect
@@ -13,7 +17,6 @@ from app.helpers.db      import connect_db
 from app.helpers.errors  import init_error, not_found_error
 from app.helpers.logging import init_logging
 from app.helpers.time    import init_datetime, utc_timestamp, utc_timestamp_now
-
 
 # Create the app
 app = Flask(__name__)
@@ -30,31 +33,45 @@ init_datetime(app)  # Handle UTC dates in timestamps
 #-----------------------------------------------------------
 @app.get("/")
 def index():
-    return render_template("pages/home.jinja")
+    with connect_db() as client:
+        # Get all the things from the DB
+        sql = "SELECT id, name FROM pieces ORDER BY name ASC"
+        params = []
+        result = client.execute(sql, params)
+        pieces = result.rows
+
+        sql = "SELECT id, name, colour FROM glazes ORDER BY name ASC"
+        params = []
+        result = client.execute(sql, params)
+        glazes = result.rows
+
+        # And show them on the page
+        return render_template("pages/home.jinja", pieces=pieces, glazes=glazes)
+
 
 
 #-----------------------------------------------------------
 # About page route
 #-----------------------------------------------------------
-@app.get("/about/")
-def about():
-    return render_template("pages/about.jinja")
+@app.get("/addPiece/")
+def pieces():
+    return render_template("pages/addPiece.jinja")
 
 
 #-----------------------------------------------------------
 # Things page route - Show all the things, and new thing form
 #-----------------------------------------------------------
-@app.get("/things/")
-def show_all_things():
+@app.get("/addGlaze/")
+def glazes():
     with connect_db() as client:
         # Get all the things from the DB
-        sql = "SELECT id, name FROM things ORDER BY name ASC"
+        sql = "SELECT id, name, colour FROM glazes ORDER BY name ASC"
         params = []
         result = client.execute(sql, params)
-        things = result.rows
+        glazes = result.rows
 
         # And show them on the page
-        return render_template("pages/things.jinja", things=things)
+        return render_template("pages/addGlaze.jinja", glazes=glazes)
 
 
 #-----------------------------------------------------------

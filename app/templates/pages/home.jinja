@@ -17,11 +17,57 @@
 
 {% block content %}
 
-  <ul>
+{#add a search bar in#}
 
-   <a href="/"><img src="docs/screenshots/icons8-home-50.png" alt="home icon"></a>
+   <h1>Pieces</h1>
+
+
+    <article>
+
+        <ul>
+            {% for piece in pieces %}
+
+                <li>
+                    <a href="/thing/{{ piece.id }}">
+                        {{ piece.name }}
+                    </a>
+                </li>
+
+            {% else %}
+
+                <p>Get to making something!</p>
+
+            {% endfor %}
+        </ul>
+
+    </article>
+
+
+    <h1>Glazes</h1>
+
+
+    <article>
+
+        <ul>
+            {% for glaze in glazes %}
+
+                <li>
+                    <a href="/thing/{{ glaze.id }}">
+                        {{ glaze.name }}
+                    </a>
+                </li>
+
+            {% else %}
+
+                <p>You need to buy some!</p>
+
+            {% endfor %}
+        </ul>
+
+    </article>
+
+
   
-  </ul>
     
 
 {% endblock %}

@@ -1,0 +1,48 @@
+{#=====================================================
+  glazes list page
+  - List of glazes passed in as 'glazes' array
+  - Form for adding a new glaze
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Flask Demo - add glaze
+
+{% endblock %}
+
+
+{% block content %}
+
+    <h2>Add a Glaze</h2>
+
+
+    <article id="form">
+
+
+        <form action="/add" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Name of new glaze"
+                required
+            >
+
+            <input
+                type="text"
+                name="colour"
+                placeholder="Name of new colour"
+                required
+            >
+
+            <button>Add the glaze</button>
+
+        </form>
+
+    </article>
+
+{% endblock %}
+

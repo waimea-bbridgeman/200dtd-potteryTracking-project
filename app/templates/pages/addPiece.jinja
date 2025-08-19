@@ -1,0 +1,51 @@
+{#=====================================================
+  About page (DEMO)
+  - Information about Flask
+  - Information about Jinja
+  - Information about Turso
+  - Information about PicoCSS
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Flask Demo - About Flask and Jinja
+
+{% endblock %}
+
+
+{% block content %}
+
+        <h2>Add a Piece</h2>
+
+
+    <article id="form">
+
+
+        <form action="/add" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Name of new piece"
+                required
+            >
+
+            <input
+                type="text"
+                name="colour"
+                placeholder="Name of new colour"
+                required
+            >
+
+            <button>Add the piece</button> 
+            <button>Cancel</button>
+
+        </form>
+
+    </article>
+
+{% endblock %}
+
