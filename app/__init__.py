@@ -99,24 +99,46 @@ def show_one_thing(id):
 #-----------------------------------------------------------
 # Route for adding a thing, using data posted from a form
 #-----------------------------------------------------------
-@app.post("/add")
-def add_a_thing():
+@app.post("/insertGlaze")
+def add_a_glaze():
     # Get the data from the form
     name  = request.form.get("name")
-    price = request.form.get("price")
+    colour = request.form.get("colour")
 
     # Sanitise the text inputs
     name = html.escape(name)
 
     with connect_db() as client:
         # Add the thing to the DB
-        sql = "INSERT INTO things (name, price) VALUES (?, ?)"
-        params = [name, price]
+        sql = "INSERT INTO glazes (name, price) VALUES (?, ?)"
+        params = [name, colour]
         client.execute(sql, params)
 
         # Go back to the home page
-        flash(f"Thing '{name}' added", "success")
-        return redirect("/things")
+        flash(f"'{name}' added", "success")
+        return redirect("/")
+
+#-----------------------------------------------------------
+# Route for adding a thing, using data posted from a form
+#-----------------------------------------------------------
+@app.post("/insertPiece")
+def add_a_piece():
+    # Get the data from the form
+    name  = request.form.get("name")
+    description = request.form.get("description")
+
+    # Sanitise the text inputs
+    name = html.escape(name)
+
+    with connect_db() as client:
+        # Add the thing to the DB
+        sql = "INSERT INTO pieces (name, description) VALUES (?, ?)"
+        params = [name, description]
+        client.execute(sql, params)
+
+        # Go back to the home page
+        flash(f"'{name}' added", "success")
+        return redirect("pages/home.jinja")
 
 
 #-----------------------------------------------------------
