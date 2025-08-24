@@ -55,7 +55,13 @@ def index():
 #-----------------------------------------------------------
 @app.get("/addPiece/")
 def pieces():
-    return render_template("pages/addPiece.jinja")
+    with connect_db() as client:
+     sql = "SELECT id, name, colour FROM glazes ORDER BY name ASC"
+     params = []
+     result = client.execute(sql, params)
+     glazes = result.rows
+     
+    return render_template("pages/addPiece.jinja", glazes=glazes)
 
 
 #-----------------------------------------------------------

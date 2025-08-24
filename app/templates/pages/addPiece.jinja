@@ -33,6 +33,18 @@
                 required
             >
 
+            <select name="select" aria-label="Select" required>
+
+                <option selected disabled value="">Select</option>
+
+                {% for glaze in glazes %}
+                    <option value="{{ glaze.name }}">{{ glaze.name }}</option>
+                {% endfor %}
+
+             </select>
+                                
+
+
             <input
                 type="text"
                 name="description"
@@ -41,7 +53,8 @@
             >
 
             <button>Add the piece</button> 
-            <button>Cancel</button>
+            <button class="cancel-button"><a href="/" class="button">Cancel</a></button>
+
 
         </form>
 
