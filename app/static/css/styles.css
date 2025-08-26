@@ -4,7 +4,6 @@
 /* HOME PAGE --------------------------------------------*/ 
 
 
-
 /* ABOUT PAGE -------------------------------------------- */
 
 #tech-stack {
@@ -31,6 +30,14 @@
     text-align: center;
     margin-bottom: 1rem;
 }
+
+/* FORM -----------------------------------------------*/
+
+button#cancel-button {
+    background-color: black;
+}
+
+
 
 #messages .message.success { color: var(--pico-color-green-500); }
 #messages .message.error   { color: var(--pico-color-red-500); }

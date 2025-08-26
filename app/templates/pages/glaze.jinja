@@ -1,0 +1,40 @@
+{#=====================================================
+  Thing page
+  - Shows details of a single thing
+  - Has a delete link to remove it
+=====================================================#}
+
+{% extends 'pages/base.jinja' %}
+
+
+{% block title %}
+
+    Flask Demo - Single Glaze
+
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>A Single Glaze...</h1>
+
+
+    <article>
+
+        <header>
+            <h3>{{ glaze.name }}</h3>
+        </header>
+
+        <h3>Colour: {{ glaze.colour }}</h3>
+
+        <footer>
+            <a href="/delete/glaze{{ glaze.id }}" onclick="return confirm('Really delete?');">Delete</a>
+        </footer>
+
+    </article>
+
+
+    <a role="button" href="/">Back to Home Page</a>
+
+{% endblock %}
+

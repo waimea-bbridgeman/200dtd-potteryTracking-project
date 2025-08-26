@@ -1,8 +1,8 @@
 {#=====================================================
   Home page
   - Hero style greeting banner
-  - List of things passed in as 'things' array
-  - Form for adding a new thing
+  - List of pieces passed in as 'pieces' array
+  
 =====================================================#}
 
 {% extends 'pages/base.jinja' %}
@@ -17,7 +17,7 @@
 
 {% block content %}
 
-{#add a search bar in#}
+
 
    <h1>Pieces</h1>
 
@@ -40,6 +40,8 @@
             {% endfor %}
         </ul>
 
+        
+
     </article>
 
 
@@ -59,7 +61,7 @@
 
             {% else %}
 
-                <p>You need to buy some!</p>
+                <p>Nothing to see here!</p>
 
             {% endfor %}
         </ul>

@@ -9,14 +9,14 @@
 
 {% block title %}
 
-    Flask Demo - Single Thing
+    Flask Demo - Single Piece
 
 {% endblock %}
 
 
 {% block content %}
 
-    <h1>A Single Thing...</h1>
+    <h1>A Single Piece...</h1>
 
 
     <article>
@@ -25,16 +25,18 @@
             <h3>{{ piece.name }}</h3>
         </header>
 
-        <p>Price: <strong>${{ thing.price }}</strong></p>
+        <h3>Description: {{ piece.description }}</h3>
+
+        
 
         <footer>
-            <a href="/delete/{{ thing.id }}" onclick="return confirm('Really delete?');">Delete</a>
+            <a href="/delete/piece{{ piece.id }}" onclick="return confirm('Really delete?');">Delete</a>
         </footer>
 
     </article>
 
 
-    <a role="button" href="/things">Back to Thing List</a>
+    <a role="button" href="/">Back to Home Page</a>
 
 {% endblock %}
 
