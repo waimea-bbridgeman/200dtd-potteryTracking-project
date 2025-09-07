@@ -54,7 +54,7 @@ def index():
 # Add piece page route
 #-----------------------------------------------------------
 @app.get("/addPiece")
-def addPiece():
+def handle_new_piece():
     with connect_db() as client:
      sql = "SELECT id, name, colour FROM glazes ORDER BY name ASC"
      params = []
@@ -63,21 +63,56 @@ def addPiece():
      
     return render_template("pages/addPiece.jinja", glazes=glazes)
 
+#-----------------------------------------------------------
+# Route for adding a piece, using data posted from a form
+#-----------------------------------------------------------
+@app.post("/addPiece")
+def add_a_piece():
+    # Get the data from the form
+    name  = request.form.get("name")
+    description = request.form.get("description")
 
+    # Sanitise the text inputs
+    name = html.escape(name)
+
+    with connect_db() as client:
+        # Add the thing to the DB
+        sql = "INSERT INTO pieces (name, description) VALUES (?, ?)"
+        params = [name, description]
+        client.execute(sql, params)
+
+        # Go back to the home page
+        flash(f"'{name}' added", "success")
+        return redirect("/")
 #-----------------------------------------------------------
 # Add glaze page route
 #-----------------------------------------------------------
 @app.get("/addGlaze")
-def addGlaze():
+def show_add_glaze_form():
     with connect_db() as client:
-        # Get all the things from the DB
-        sql = "SELECT id, name, colour FROM glazes ORDER BY name ASC"
-        params = []
-        result = client.execute(sql, params)
-        glazes = result.rows
-
         # And show them on the page
-        return render_template("pages/addGlaze.jinja", glazes=glazes)
+        return render_template("pages/addGlaze.jinja")
+
+#-----------------------------------------------------------
+# Add glaze page route
+#-----------------------------------------------------------
+@app.post("/addGlaze")
+def handle_new_glaze():
+    with connect_db() as client:
+        # get the new data from the form
+        glaze_name = request.form.get("name")
+        glaze_colour = request.form.get("colour")
+
+        # Insert into the DB
+        sql = "INSERT INTO glazes (name, colour) VALUES (?, ?)"
+        params = [glaze_name, glaze_colour]
+        client.execute(sql, params)
+        
+        # Success!
+        flash(f"Glaze, {glaze_name}, added")
+
+        # And back to home page
+        return redirect("/")
 
 
 #-----------------------------------------------------------
@@ -90,6 +125,10 @@ def show_one_piece(id):
         sql = "SELECT id, name, description FROM pieces WHERE id=?"
         params = [id]
         result = client.execute(sql, params)
+
+        # sql = "SELECT g_id, date, layers FROM uses WHERE g_id=?"
+        # params = [g_id]
+        # result = client.execute(sql, params)
 
 
         # Did we get a result?
@@ -126,49 +165,8 @@ def show_one_glaze(id):
             return not_found_error()
 
 
-#-----------------------------------------------------------
-# Route for adding a glaze, using data posted from a form
-#-----------------------------------------------------------
-@app.post("/add/glaze")
-def add_a_glaze():
-    # Get the data from the form
-    name  = request.form.get("name")
-    colour = request.form.get("colour")
 
-    # Sanitise the text inputs
-    name = html.escape(name)
 
-    with connect_db() as client:
-        # Add the thing to the DB
-        sql = "INSERT INTO glazes (name, colour) VALUES (?, ?)"
-        params = [name, colour]
-        client.execute(sql, params)
-
-        # Go back to the home page
-        flash(f"'{name}' added", "success")
-        return redirect("/")
-
-#-----------------------------------------------------------
-# Route for adding a piece, using data posted from a form
-#-----------------------------------------------------------
-@app.post("/add/piece")
-def add_a_piece():
-    # Get the data from the form
-    name  = request.form.get("name")
-    description = request.form.get("description")
-
-    # Sanitise the text inputs
-    name = html.escape(name)
-
-    with connect_db() as client:
-        # Add the thing to the DB
-        sql = "INSERT INTO pieces (name, description) VALUES (?, ?)"
-        params = [name, description]
-        client.execute(sql, params)
-
-        # Go back to the home page
-        flash(f"'{name}' added", "success")
-        return redirect("/")
 
 
 #-----------------------------------------------------------
