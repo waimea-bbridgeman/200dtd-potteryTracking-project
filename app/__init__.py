@@ -113,12 +113,30 @@ def handle_new_glaze():
 
         # And back to home page
         return redirect("/")
+#-----------------------------------------------------------
+# Update the piece information 
+#-----------------------------------------------------------
+@app.post("/updatePiece")
+def handle_updates_to_Piece():
+    with connect_db() as client:
+        #Get the new info from the form
+        uses_layers = request.form.get("layers")
+
+        #Insert it into the DB
+        sql = "INSERT INTO uses (layers) VALUES (?)"
+        params = [uses_layers]
+        client.execute(sql, params)
+
+        #Success!
+        flash(f"Piece updated!")
+
+        return redirect("/")
 
 
 #-----------------------------------------------------------
 # Piece page route - Show details of a single piece
 #-----------------------------------------------------------
-@app.get("/piece/<int:id>/")
+@app.get("/piece/<int:id>/")    
 def show_one_piece(id):
     with connect_db() as client:
         # Get the thing details from the DB

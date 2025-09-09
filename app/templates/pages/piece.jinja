@@ -37,7 +37,9 @@
             {% endfor %}  
         </ul>     
 
-        <form>
+        <form action="/updatePiece" method="POST">
+
+            <table>
              <select name="select" aria-label="Select" required>
 
                 <option selected disabled value="">Select</option>
@@ -48,7 +50,7 @@
 
              </select>
         
-        
+            </table>
         </form>
 
         <footer>
