@@ -16,27 +16,50 @@
 
 {% block content %}
 
-    <h1>A Single Piece...</h1>
+    
 
 
     <article>
 
         <header>
-            <h3>{{ piece.name }}</h3>
+            <h1>{{ piece.name }}</h1>
         </header>
 
-        <h3>Description: {{ piece.description }}</h3>
+        <p>Description: {{ piece.description }}</p>
 
+        <h2>Glazing So Far...</h2>
+
+        <ul>
+            {% for dip in dips %}
+                <li>{{ dip.date }} - {{ dip.name }}, {{ dip.layers }} layers</li>
+            {% else %}
+                None
+            {% endfor %}  
+        </ul>     
+
+        <form>
+             <select name="select" aria-label="Select" required>
+
+                <option selected disabled value="">Select</option>
+
+                {% for glaze in glazes %}
+                    <option value="{{ glaze.name }}">{{ glaze.name }}</option>
+                {% endfor %}
+
+             </select>
         
+        
+        </form>
 
         <footer>
             <a href="/delete/piece{{ piece.id }}" onclick="return confirm('Really delete?');">Delete</a>
         </footer>
 
     </article>
+    
 
-
-    <a role="button" href="/">Back to Home Page</a>
+    <a role="button" href="/" onclick="return ">Save</a>
+    <button id="cancel-button"><a href="/" class="button">Cancel</a></button>
 
 {% endblock %}
 

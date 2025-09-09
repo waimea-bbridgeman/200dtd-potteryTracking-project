@@ -118,7 +118,7 @@ def handle_new_glaze():
 #-----------------------------------------------------------
 # Piece page route - Show details of a single piece
 #-----------------------------------------------------------
-@app.get("/piece/<int:id>")
+@app.get("/piece/<int:id>/")
 def show_one_piece(id):
     with connect_db() as client:
         # Get the thing details from the DB
@@ -126,16 +126,39 @@ def show_one_piece(id):
         params = [id]
         result = client.execute(sql, params)
 
-        # sql = "SELECT g_id, date, layers FROM uses WHERE g_id=?"
-        # params = [g_id]
-        # result = client.execute(sql, params)
-
-
         # Did we get a result?
         if result.rows:
             # yes, so show it on the page
             piece = result.rows[0]
-            return render_template("pages/piece.jinja", piece=piece)
+
+            # Get the glave dips so far
+            sql = """
+                SELECT 
+                    glazes.name, 
+                    uses.date, 
+                    uses.layers 
+                    
+                FROM uses 
+                JOIN glazes ON uses.g_id = glazes.id
+
+                WHERE uses.p_id=?
+            """
+            params = [id]
+            result = client.execute(sql, params)
+            dips = result.rows
+
+            # Get a list of glazes for menu
+            sql = "SELECT id, name, colour FROM glazes"
+            params = []
+            result = client.execute(sql, params)
+            glazes = result.rows
+
+            return render_template(
+                "pages/piece.jinja", 
+                piece=piece,
+                dips=dips,
+                glazes=glazes
+            )
 
         else:
             # No, so show error
