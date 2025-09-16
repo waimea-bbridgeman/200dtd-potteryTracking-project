@@ -29,28 +29,46 @@
 
         <h2>Glazing So Far...</h2>
 
-        <ul>
-            {% for dip in dips %}
-                <li>{{ dip.date }} - {{ dip.name }}, {{ dip.layers }} layers</li>
-            {% else %}
-                None
-            {% endfor %}  
-        </ul>     
-
         <form action="/updatePiece" method="POST">
 
             <table>
-             <select name="select" aria-label="Select" required>
+                <thead>
+                    <tr>
+                    <th scope="col">Glaze</th>
+                    <th scope="col">Times Glazed</th>
+                    <th scope="col">Date Glazed</th>
+                    </tr>
+                </thead>
 
-                <option selected disabled value="">Select</option>
-
-                {% for glaze in glazes %}
-                    <option value="{{ glaze.name }}">{{ glaze.name }}</option>
-                {% endfor %}
-
-             </select>
+                <tbody>
+                    {% for dip in dips %}
+                    <tr>
+                        <td>{{ dip.name }}</td>
+                        <td>{{ dip.layers }}</td>
+                        <td>{{ dip.date }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+          
         
             </table>
+                
+                
+                <h2>Update a Glaze Entry</h2>
+            <select name="select" aria-label="Select">
+            
+                 <option selected disabled value="">Select</option>
+
+                    {% for glaze in glazes %}
+                        <option value="{{ glaze.name }}">{{ glaze.name }}</option>
+                    {% endfor %}
+                    
+            </select>
+
+                
+
+                <button type="submit">Update</button>
+
         </form>
 
         <footer>
@@ -60,7 +78,7 @@
     </article>
     
 
-    <a role="button" href="/" onclick="return ">Save</a>
+    
     <button id="cancel-button"><a href="/" class="button">Cancel</a></button>
 
 {% endblock %}

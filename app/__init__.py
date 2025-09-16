@@ -121,6 +121,7 @@ def handle_updates_to_Piece():
     with connect_db() as client:
         #Get the new info from the form
         uses_layers = request.form.get("layers")
+        
 
         #Insert it into the DB
         sql = "INSERT INTO uses (layers) VALUES (?)"
@@ -149,7 +150,7 @@ def show_one_piece(id):
             # yes, so show it on the page
             piece = result.rows[0]
 
-            # Get the glave dips so far
+            # Get the glaze dips so far
             sql = """
                 SELECT 
                     glazes.name, 
