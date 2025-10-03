@@ -121,11 +121,14 @@ def handle_updates_to_Piece():
     with connect_db() as client:
         #Get the new info from the form
         uses_layers = request.form.get("layers")
+        p_id = request.form.get("p_id")
+        g_id = request.form.get("g_id")
+        
         
 
         #Insert it into the DB
-        sql = "INSERT INTO uses (layers) VALUES (?)"
-        params = [uses_layers]
+        sql = "INSERT INTO uses (p_id, layers, g_id) VALUES (?, ?, ?)"
+        params = [p_id, uses_layers, g_id]
         client.execute(sql, params)
 
         #Success!

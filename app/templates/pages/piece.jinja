@@ -52,24 +52,25 @@
           
         
             </table>
-                
-                
-                <h2>Update a Glaze Entry</h2>
-            <select name="select" aria-label="Select">
             
-                 <option selected disabled value="">Select</option>
-
-                    {% for glaze in glazes %}
-                        <option value="{{ glaze.name }}">{{ glaze.name }}</option>
-                    {% endfor %}
-                    
-            </select>
-
                 
+             
+        
+        <input type="hidden" name="p_id" value={{ piece.id }}>
 
-                <button type="submit">Update</button>
+        <label for="g_id">Select a glaze:</label>
+        <select name="g_id" id="g_id" required>
+            <option disabled selected value="">Choose glaze</option>
+            {% for glaze in glazes %}
+                <option value={{ glaze.id }}>{{ glaze.name }}</option>
+            {% endfor %}
+        </select>
 
-        </form>
+        <label for="layers">Number of layers:</label>
+        <input type="number" name="layers" id="layers" min="1" value="1" required>
+
+        <button type="submit">Add Glaze Layer</button>
+    </form>
 
         <footer>
             <a href="/delete/piece{{ piece.id }}" onclick="return confirm('Really delete?');">Delete</a>
