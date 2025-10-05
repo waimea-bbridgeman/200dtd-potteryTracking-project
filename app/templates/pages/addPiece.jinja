@@ -33,18 +33,6 @@
                 required
             >
 
-            <select name="select" aria-label="Select" required>
-
-                <option selected disabled value="">Select</option>
-
-                {% for glaze in glazes %}
-                    <option value="{{ glaze.name }}">{{ glaze.name }}</option>
-                {% endfor %}
-
-             </select>
-                                
-
-
             <input
                 type="text"
                 name="description"

@@ -16,13 +16,10 @@
 
 {% block content %}
 
-    <h1>A Single Glaze...</h1>
-
-
     <article>
 
         <header>
-            <h3>{{ glaze.name }}</h3>
+            <h1>{{ glaze.name }}</h1>
         </header>
 
         <h3>Colour: {{ glaze.colour }}</h3>
@@ -34,7 +31,6 @@
     </article>
 
 
-    <a role="button" href="/">Save</a>
-    <button id="cancel-button"><a href="/" class="button">Cancel</a></button>
+    <a role="button" href="/">Back</a>
 {% endblock %}
 
