@@ -1,8 +1,24 @@
 /*=====================================================
   User stylesheet - Building upon PicoCSS
 =====================================================*/
-/* HOME PAGE --------------------------------------------*/ 
+/* HEADER --------------------------------------------*/ 
+nav {
+    justify-content: center;
+}
 
+
+/* HOME PAGE --------------------------------------------*/ 
+article#home {
+    width: 500px;       
+    margin: auto; 
+    border: 1px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
 
 /* ABOUT PAGE -------------------------------------------- */
 
