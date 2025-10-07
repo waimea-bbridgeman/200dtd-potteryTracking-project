@@ -1,6 +1,10 @@
 /*=====================================================
   User stylesheet - Building upon PicoCSS
 =====================================================*/
+
+body{
+    background-color: #080F2D; 
+}
 /* HEADER --------------------------------------------*/ 
 nav {
     justify-content: center;
@@ -49,8 +53,16 @@ h1 {
 
 /* FORM -----------------------------------------------*/
 
-button#cancel-button {
-    background-color: black;
+article#form {
+    width: 500px;       
+    margin: auto; 
+    border: 1px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 
