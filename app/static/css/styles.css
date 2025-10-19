@@ -3,26 +3,36 @@
 =====================================================*/
 
 body{
-    background-color: #080F2D; 
+    background-color: #080F2D;
+    min-height: 100vh;
+  
 }
 /* HEADER --------------------------------------------*/ 
 nav {
     justify-content: center;
 }
 
+/* LISTS ---------------------------------------------*/
+article ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  
 
 /* HOME PAGE --------------------------------------------*/ 
 article#home {
-    width: 500px;       
+    
+    width: 600px;       
     margin: auto; 
-    border: 1px;
     padding: 20px;
     text-align: center;
+    
 }
 
 h1 {
     text-align: center;
 }
+
 
 /* ABOUT PAGE -------------------------------------------- */
 
