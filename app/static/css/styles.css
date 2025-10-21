@@ -9,8 +9,9 @@ body{
 }
 /* HEADER --------------------------------------------*/ 
 nav {
-    justify-content: center;
+    justify-content: center; 
 }
+
 
 /* LISTS ---------------------------------------------*/
 article ul {
@@ -27,6 +28,10 @@ article#home {
     padding: 20px;
     text-align: center;
     
+}
+
+article#home ul li {
+    list-style: none;
 }
 
 h1 {

@@ -95,29 +95,29 @@ Use advanced techniques to develop a database means that, taking into account th
 
 
 2. You need to design the structure of the database:
-   - [ ] **Tables** - at least two that are linked by a relationship
-   - [ ] **Data Types** - a range of data types used
-   - [ ] **Key Fields** - primary keys for each table, foreign keys for relationships
+   - [x] **Tables** - at least two that are linked by a relationship
+   - [x] **Data Types** - a range of data types used
+   - [x] **Key Fields** - primary keys for each table, foreign keys for relationships
    - [ ] **Values** - auto-generation / default values as required
 
 3. You should use appropriate tools and advanced techniques to organise and query the data:
-   - [ ] **Linking data in related tables** using queries or keys
-   - [ ] Writing **custom queries** to filter and/or sort data
+   - [x] **Linking data in related tables** using queries or keys
+   - [x] Writing **custom queries** to filter and/or sort data
    - [ ] Using **logical, mathematical and/or wildcard operators** as needed
 
 4. You should use appropriate tools and advanced techniques to present the data:
-   - [ ] Customising **presentation** of the data (not just raw data values)
-   - [ ] Using **custom forms** to add user input to the database
+   - [x] Customising **presentation** of the data (not just raw data values)
+   - [x] Using **custom forms** to add user input to the database
    - [ ] Setting **validation rules** for data entry
 
 5. You must apply appropriate data integrity and testing procedures:
    - [ ] Show that any **presented data is correct** (e.g. matches database values / calculations)
-   - [ ] Show that any input user data **updates the database as expected**
+   - [x] Show that any input user data **updates the database as expected**
 
 6. You need to explain relevant implications:
-   - [ ] Identify the **implications most relevant** to your project
-   - [ ] Explain **what the implications mean** and **why each is relevant** to your project
-   - [ ] Explain **how each implication will impact your specific project** (considerations / choices / designs)
+   - [x] Identify the **implications most relevant** to your project
+   - [x] Explain **what the implications mean** and **why each is relevant** to your project
+   - [x] Explain **how each implication will impact your specific project** (considerations / choices / designs)
 
 *Note: You must satisfy **all** of the criteria above to pass*
 
@@ -127,8 +127,8 @@ Use advanced techniques to develop a database means that, taking into account th
 Use advanced techniques to develop an informed database means **all the criteria for Achieved**, plus:
 
 1. You should use information from testing procedures to improve the quality of your database:
-   - [ ] Show **evidence of your testing**, particularly with end-users
-   - [ ] Show the **improvements made** as a result
+   - [x] Show **evidence of your testing**, particularly with end-users
+   - [x] Show the **improvements made** as a result
 
 2. You should structure, organise and query your data logically:
    - [ ] Your tables should be **normalised** (no repeating data)

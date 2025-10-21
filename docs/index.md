@@ -7,11 +7,10 @@ by Billy Bridgeman
 
 ## Project Description
 
-Replace this text with your project description and list the key features below
+This project tracks the 
 
 - Track how many glazes have been done 
 - Track how close a piece is to being finished 
-- (potentially) show images of the finished piece 
 - Add new pieces to the database
 - Assign glazes to pieces 
 

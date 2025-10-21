@@ -7,11 +7,8 @@ by Billy Bridgeman
 
 ## Project Description
 
-Replace this text with your project description and list the key features below
-
 - Track how many glazes have been done 
 - Track how close a piece is to being finished 
-- (potentially) show images of the finished piece 
 - Add new pieces to the database
 - Assign glazes to pieces 
 
@@ -21,6 +18,7 @@ Replace this text with your project description and list the key features below
 ## Project Links
 
 - [GitHub repo for the project](https://github.com/waimea-bbridgeman/200dtd-potteryTracking-project)
+- [Project Documentaion](https://waimea-bbridgeman.github.io/200dtd-potteryTracking-project/)
 - [Live web app](https://...)
 
 
