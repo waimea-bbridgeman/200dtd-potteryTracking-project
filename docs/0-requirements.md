@@ -13,9 +13,7 @@ Able to track pottery piece progress (how many glazes done, how many till comple
 
 ## Proposed Solution
 
-Make a website that uses a DB that holds information about what glazes owned and what pieces made that tracks how close a piece is to being complete and 
-displays a photo of the finished product (maybe) to showcase what the finished product looks like compared to what the recipe says it should. 
-
+Make a website that uses a DB that holds information about what glazes owned and what pieces made that tracks how close a piece is to being complete.
 
 ---
 

@@ -18,8 +18,8 @@ by Billy Bridgeman
 ## Project Links
 
 - [GitHub repo for the project](https://github.com/waimea-bbridgeman/200dtd-potteryTracking-project)
-- [Project Documentaion](https://waimea-bbridgeman.github.io/200dtd-potteryTracking-project/)
-- [Live web app](https://...)
+- [Project Documentation](https://waimea-bbridgeman.github.io/200dtd-potteryTracking-project/)
+- [Live web app](https://two00dtd-potterytracking-project.onrender.com)
 
 
 ---
@@ -60,6 +60,6 @@ The project demonstrates a number of **advanced digital media (web) techniques**
 - Using a third-party library
 - Using composite effects
 
-** EDIT THESE LISTS ABOVE TO MATCH YOUR PROJECT**
+
 
 
