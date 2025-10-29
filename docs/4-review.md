@@ -11,43 +11,25 @@ To be able to track how many layers have been completed as well as glazes and pi
 
 ## Usability Implications
 
-To make my webpage easy to navigate for my end user, I got feedback about the layout from them. For example, my end user suggested a more simplistic design for viewing completed glazes. 
+To ensure everything worked as intended I tested and altered everything on my webpage. This included adding pieces and glazes to the database as well as removing them and adding layers to pieces. 
 
 
 ## Functionality Implications
 
-Functionality implications refer to how particular features effect the overall usefulness and effectiveness on the system.  
-
-### Relevance to the System
-
-Functionality implications will help my end user use my website to fulfil its intended purpose without getting confused or having overcomplicated steps to achieve something.
-
-### Impact / Considerations
-
-To use Functionality implications across my website i need to consider how my end user will want to navigate the website and interact with my DB 
+To make my webpage easy to navigate for my end user, I got feedback about the layout from them. For example, my end user suggested a more simplistic design for viewing completed glazes. 
 
 
+## Aesthetic Implications 
 
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
-
-
-### NAME OF IMPLICATION 4
-
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
+To make sure I used colours that work well together, I went to pico.css and found the page about colours, from there i found a colour scheme I liked. To make sure my font was an appropriate size, I asked for feedback from my end-user.  
 
 
-### NAME OF IMPLICATION 5
+## Accessibility Implications
 
-Replace this text with notes about what you did during the project to address the implication - design features, etc.
-
+My intended end-user needs glasses to read, because of this I made sure to use a font size that isn't too small. With other potential end-users in mind I made sure to put alt text on all my form fill in spaces. 
 
 ---
 
 ## Overall Review
 
-Replace these words with a brief review of how the project went in terms of:
-- What went well?
-- What didn't go so well?
-- How did the testing/trialling impact the final system?
-- What would you do differently if you could?
-The overall concept transfered into a website well, I only needed to change a few things to align better with usability.  
+The overall concept transferred into a webpage well, I only needed to change a few things to align better with usability. I ran into a couple of problems trying to add layers and time-stamps to pieces, however I worked around this problem and adapted to it (this is the change i talked about earlier). After testing adding layers to pieces, I found issues adding them as a total like I intended, this led to them being displayed as separate entries. Overall, I think it went well so i'm not sure what I would do different if I could, however finding a solution to the problem mentioned earlier would have been nice.    

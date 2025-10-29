@@ -77,7 +77,7 @@ Considering that the website is for the sole purpose of fulfilling what the end 
 
 ## Accessibility Implications
 
-Accessibility Implications means that my website is available across platforms and to all end users. 
+Accessibility Implications means that my website is available across platforms and to all end users who may have disabilities. 
 
 ### Relevance to the System
 
@@ -85,5 +85,5 @@ Accessibility Implications is relevant to the system because it allows the websi
 
 ### Impact / Considerations
 
-Since my website will only be used by one person. I will need to consider all the systems that it might be used on (phone, ipad and computer) 
+Since my website will only be used by one person. I won't need to consider disabilities to cater for however, i will add the needed code to cater to them if my webpage were to ever be used be them. 
 
