@@ -42,7 +42,7 @@ Giving my prototype to my end-user this was some feedback that was raised:
 After my end-user gave me feedback on places i could work on, i added a cancel button as well as a home button, a space fro pictures to be displayed next to the 
 pieces in the list and added a field for my end-user to add the date. 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/ZRpIf2Z5lhSrrTPOOyWl4G/V2?node-id=1-451&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/ZRpIf2Z5lhSrrTPOOyWl4G/V2?node-id=1-444&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
 
 
 ---
@@ -68,8 +68,7 @@ Giving my V2 prototype to my end-user this was some feedback that was raised:
 
 I made the glazes box into a dropdown that should create another one below it when filled in so that more glazes can be added. I also made another box in the "add piece" form that allows my end-user to add the total amount of planned glazes for the piece. 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/h1WEgzJ1t517FIH7K2vcqM/V3?node-id=1-451&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
-
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="450" height="800" src="https://embed.figma.com/proto/h1WEgzJ1t517FIH7K2vcqM/V3?node-id=1-443&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
 
 ---     
 
