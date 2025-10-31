@@ -5,97 +5,65 @@
 
 Develop the system until it is fully featured, with a refined UI and it satisfies the requirements. The system will be fully tested at this point.
 
-
----
-
-
 ---
 
 ## Final Implementation
 
 The web app is fully implemented with a refined UI:
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
+Here's a basic run through of it. 
+![Basic run through of the website](screenshots/basic-run-through.gif)
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Centering 
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+The webpage looked "weird" with the lists being on the left side, leaving the right side bare. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Webpage Left Aligned](screenshots/leftCentered.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+Moving the lists and the nav to be centre aligned made the webpage look fuller. Additionally, I removed the bullet-points from the list to give it a simpler look as they were "unnecessary" 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Webpage Centre Aligned](screenshots/lightBack.png)
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Background Colour
 
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+The default background colour is a very bright white, this makes it "hard to look at". So I changed it. 
+
+![Default Background](screenshots/lightBack.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+Changing it to this dark blue made the webpage much easier on the eyes and made the articles much more visible.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
 
+![Dark background colour](screenshots/darkBack.png)
 
 ---
 
-## Testing FEATURE NAME HERE
+## Dark vs Light Theme 
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+My end-user mentioned that the light theme made the webpage hard to look at and hurt their eyes slightly. To combat this I made the suggestion of dark mode. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Light version of the table](screenshots/lightTable.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+This change made the table easier to look at by reducing the unrelenting bright white. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
+![Dark version of the table](screenshots/darkTable.png)
 
 ---
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+The project is now seemingly complete, everything works and is displayed nicely how my end-user wants. 
 

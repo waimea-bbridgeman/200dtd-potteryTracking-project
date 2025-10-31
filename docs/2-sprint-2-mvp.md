@@ -10,9 +10,9 @@ Develop a bare-bones, working web application that provides the key functionalit
 
 ## Implemented Database Schema
 
-Replace this text with notes regarding the DB schema.
+Slight chances were made to my database schema compared to the planned version. This was the fact that the time stamp was no longer needed so I removed it. 
 
-![SCREENSHOT OF DB SCHEMA](screenshots/example.png)
+![Picture of the actual database](screenshots/dbschema.png)
 
 
 ---
@@ -21,87 +21,28 @@ Replace this text with notes regarding the DB schema.
 
 The key functionality of the web app was implemented:
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE SYSTEM HERE**
+![Bare bones version of the webpage](screenshots/basic-run-throughv2.gif)
 
 
 ---
 
-## Testing FEATURE NAME HERE
+## Back Button
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+My end-user made the suggestion that my add glaze/piece pages should also include a back button if they accidentally press on them. 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+## Refined UI Prototype
+
+![No Back Button](screenshots/noBackButton.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+Added a back button.
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![With Back Button](screenshots/withBackButton.png)
 
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
-
-## Testing FEATURE NAME HERE
-
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-
-### Changes / Improvements
-
-Replace this text with notes any improvements you made as a result of the testing.
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
-
----
 
 ## Sprint Review
 
 Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
 
+Surprisingly, my end-user didn't have a lot to say during this sprint. They liked the way they could use my webpage and only had the suggestion of a back button, something I stupidly overlooked. All their input during the prototype phase has meant little changes were needed here.

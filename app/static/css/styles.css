@@ -12,15 +12,17 @@ nav {
     justify-content: center; 
 }
 
+ 
+/* LISTS --------------------------------------------- */
 
-/* LISTS ---------------------------------------------*/
 article ul {
     padding-left: 0;
     text-align: center;
   }
-  
+   
 
-/* HOME PAGE --------------------------------------------*/ 
+/* HOME PAGE --------------------------------------------  */
+
 article#home {
     
     width: 600px;       
@@ -28,28 +30,15 @@ article#home {
     padding: 20px;
     text-align: center;
     
-}
+    } 
 
 article#home ul li {
     list-style: none;
-}
-
+} 
+ 
 h1 {
     text-align: center;
-}
-
-
-/* ABOUT PAGE -------------------------------------------- */
-
-#tech-stack {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-}
-
-#tech-stack article {
-    flex: 1;
-}
+}  
 
 
 /* MESSAGES -------------------------------------------- */
@@ -78,7 +67,7 @@ article#form {
 
 h2 {
     text-align: center;
-}
+}  
 
 
 
