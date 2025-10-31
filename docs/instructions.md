@@ -131,9 +131,9 @@ Use advanced techniques to develop an informed database means **all the criteria
    - [x] Show the **improvements made** as a result
 
 2. You should structure, organise and query your data logically:
-   - [ ] Your tables should be **normalised** (no repeating data)
-   - [ ] Your fields have the **appropriate data type**, **defaults**, etc.
-   - [ ] Your database **queries are well-written and efficient**
+   - [x] Your tables should be **normalised** (no repeating data)
+   - [x] Your fields have the **appropriate data type**, **defaults**, etc.
+   - [x] Your database **queries are well-written and efficient**
 
 3. You must ensure that you have addressed the relevant implications above:
    - [ ] For each one, you need to **explain what you did in your project to address it**

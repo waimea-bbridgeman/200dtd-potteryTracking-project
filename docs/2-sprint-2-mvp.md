@@ -43,6 +43,4 @@ Added a back button.
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
-
 Surprisingly, my end-user didn't have a lot to say during this sprint. They liked the way they could use my webpage and only had the suggestion of a back button, something I stupidly overlooked. All their input during the prototype phase has meant little changes were needed here.
